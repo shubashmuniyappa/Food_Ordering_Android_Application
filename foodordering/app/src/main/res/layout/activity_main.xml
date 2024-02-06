@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnSignUp"
+            android:text="Sign Up"
+            android:fontFamily="@font/caveat"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            app:shadowColor="@android:color/black"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp"
+            app:cornerRadius="4dp"
+            app:fButtonColor="@color/btnSignUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnSignIn"
+            android:text="Sign In"
+            android:textSize="25sp"
+            android:fontFamily="@font/caveat"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            app:shadowColor="@android:color/black"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp"
+            app:cornerRadius="4dp"
+            app:fButtonColor="@color/btnSignActive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="126dp"
+        android:layout_marginRight="36dp"
+        android:ems="10"
+        android:fontFamily="@font/caveat"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:minHeight="32dp"
+        android:text="FOOD ORDERING APPLICATION"
+        android:textColor="@android:color/black"
+        android:textSize="23sp" />
+
+
+</RelativeLayout>
